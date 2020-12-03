@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className={s.wrapper}>
         <Header></Header>
         <section className={s.fastReview}>
           <h2 className={s.title}>fast review</h2>
