@@ -4,12 +4,14 @@ export default function Header() {
   return (
     <div className={s.header}>
       <div className={s.topHeader}>
-        <span className={s.name}>CHISTIKOV VLADYSLAV</span>
-        <span className={s.profession}>
+        <div className={[s.nameSurnameBlock, s.block].join(" ")}>
+          CHISTIKOV <span className={s.surname}>VLADYSLAV</span>
+        </div>
+        <div className={[s.professionBlock, s.block].join(" ")}>
           ux/ui designer&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;web
           developer&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;photographer
-        </span>
-        <span className={s.portfolio}>portfolio</span>
+        </div>
+        <span className={[s.portfolioBlock, s.block].join(" ")}>portfolio / cv</span>
       </div>
       <div className={s.bottomHeader}>
         <img src="/images/avatar_image.png" className={s.image} alt="" />
