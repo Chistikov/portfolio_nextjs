@@ -1,0 +1,98 @@
+.header {
+  width: 100%;
+}
+
+.topHeader {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #060606;
+  color: #fff;
+  padding: 0 100px;
+  letter-spacing: 0.1em;
+  font-size: 22px;
+}
+
+.nameSurnameBlock {
+  width: 300px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.professionBlock {
+  color: #dcdcdcb2;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.portfolioBlock {
+  width: 300px;
+  text-align: right;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bottomHeader {
+  height: 440px;
+  background-color: #060606;
+  overflow: hidden;
+}
+
+.image {
+  margin: auto;
+  position: relative;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 1500px) {
+  .nameSurnameBlock {
+    width: auto;
+  }
+
+  .surname {
+    display: none;
+  }
+
+  .portfolioBlock {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .topHeader {
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 0 0px;
+  }
+  .nameSurnameBlock {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .surname {
+    display: inline-block;
+  }
+
+  .portfolioBlock {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .nameSurnameBlock {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .professionBlock {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    word-spacing: -1px;
+  }
+}
