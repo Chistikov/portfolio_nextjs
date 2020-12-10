@@ -1,48 +1,12 @@
 import s from "./styles.module.css";
 import { useEffect, useState } from "react";
-import gsap from "gsap";
+
+import tabSwitcher from "./helpers/tabSwitcher.js";
 
 export default function MySkillsBlock() {
   let [getContent, setContent] = useState(0);
 
-  useEffect(() => {
-    let buttons = document.querySelectorAll(`.${s.mySkillsBlock} .${s.btn}`);
-    let tabs = document.querySelectorAll(`.${s.mySkillsBlock} .${s.skillsBlock}`);
-    let container = document.querySelectorAll(`.${s.mySkillsBlock}`);
-    let lastActiveDataLInk = 0;
-
-    buttons.forEach((btn) => {
-      btn.onclick = () => {
-        let data_link = +btn.getAttribute("data-link");
-        if (lastActiveDataLInk !== data_link) {
-          makeAllButtonsDisabled();
-          btn.classList.add(s.active);
-          hideAllTabs().then(() => {
-            gsap.to(tabs[data_link], { display: "block", opacity: 1, duration: 0.5 });
-          });
-
-          lastActiveDataLInk = data_link;
-        }
-      };
-    });
-
-    function makeAllButtonsDisabled() {
-      buttons.forEach((btn) => {
-        if (btn.classList.contains(s.active)) {
-          btn.classList.remove(s.active);
-        }
-      });
-    }
-
-    function hideAllTabs() {
-      let promArr = [];
-      tabs.forEach((tab) => {
-        promArr.push(gsap.to(tab, { opacity: "0", display: "none", duration: 0.5 }));
-      });
-
-      return Promise.all(promArr);
-    }
-  });
+  useEffect(tabSwitcher.bind(null, s));
 
   return (
     <section className={s.mySkillsBlock}>
@@ -105,7 +69,7 @@ export default function MySkillsBlock() {
         </div>
 
         <div className={`${s.skillsBlock} ${s.hide}`} data-link="1">
-          фываыва
+          Soon something will be here :)
         </div>
       </div>
     </section>
