@@ -18,7 +18,7 @@
 
 .buttonsBlock {
   margin-top: 60px;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 .btn {
@@ -67,9 +67,8 @@
 
 .skillsContainer {
   margin: 0 50px;
-  text-align-last: left;
+  text-align: left;
   flex-basis: 375px;
-  min-width: 375px;
   max-width: 375px;
 }
 
@@ -79,8 +78,6 @@
   font-size: 18px;
   line-height: 18px;
   margin-top: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
   margin-bottom: 46px;
 }
 
@@ -112,14 +109,30 @@
   }
 
   .horisontalWrapper:first-child {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
   }
 
   .skillsContainer {
-    margin-top: 60px;
+    margin-top: 70px;
+    flex-basis: auto;
   }
 
   .skillsContainer:first-child {
     margin-top: 0px;
+  }
+
+  .skillsContainerTitle {
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .skillsContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .skillsContainerSkill {
+    font-size: 17px;
   }
 }
