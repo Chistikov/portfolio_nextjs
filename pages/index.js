@@ -1,6 +1,7 @@
 import Head from "next/head";
 import s from "../styles/Home.module.css";
 import Header from "../components/Header/Header";
+import MySkillsBlock from "../components/MySkillsBlock/MySkillsBlock";
 
 export default function Home() {
   return (
@@ -88,6 +89,7 @@ export default function Home() {
             </div> */}
           </div>
         </section>
+        <MySkillsBlock></MySkillsBlock>
       </main>
     </div>
   );
