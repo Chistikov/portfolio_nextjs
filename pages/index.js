@@ -3,6 +3,7 @@ import s from "../styles/Home.module.css";
 import Header from "../components/Header/Header";
 import MySkillsBlock from "../components/MySkillsBlock/MySkillsBlock";
 import ReviewMyWorksBlock from "../components/ReviewMyWorksBlock/ReviewMyWorksBlock";
+import SideContactsBlock from "../components/SideContactsBlock/SideContactsBlock";
 
 export default function Home() {
   return (
@@ -92,6 +93,7 @@ export default function Home() {
         </section>
         <MySkillsBlock></MySkillsBlock>
         <ReviewMyWorksBlock></ReviewMyWorksBlock>
+        <SideContactsBlock></SideContactsBlock>
       </main>
     </div>
   );
