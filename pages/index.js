@@ -15,7 +15,7 @@ export default function Home() {
 
       <main className={s.wrapper}>
         <Header></Header>
-        <section className={s.fastReview}>
+        {/* <section className={s.fastReview}>
           <h2 className={s.title}>fast review</h2>
           <div className={s.works}>
             <div className={s.work}>
@@ -86,11 +86,8 @@ export default function Home() {
                 <img src="/images/arrow.svg" alt="" />
               </div>
             </div>
-            {/* <div className={s.moreBtn}>
-              <div className={s.content}>more</div>
-            </div> */}
           </div>
-        </section>
+        </section> */}
         <MySkillsBlock></MySkillsBlock>
         <ReviewMyWorksBlock></ReviewMyWorksBlock>
         <SideContactsBlock></SideContactsBlock>
