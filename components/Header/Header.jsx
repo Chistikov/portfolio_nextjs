@@ -36,7 +36,7 @@ export default function Header() {
       moveGradient();
       let scrolledPx = document.documentElement.scrollTop || window.pageYOffset;
       let image = document.querySelector(`.${s.image}`);
-      image.style.bottom = -parseInt(scrolledPx / 8) + "px";
+      image.style.bottom = -parseInt(scrolledPx / 3) + "px";
     };
   });
 
@@ -47,8 +47,7 @@ export default function Header() {
           CHISTIKOV <span className={s.surname}>VLADYSLAV</span>
         </div>
         <div className={[s.professionBlock, s.block].join(" ")}>
-          ux/ui designer&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;web
-          developer&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;photographer
+          web developer&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;ux/ui designer
         </div>
         <span className={[s.portfolioBlock, s.block].join(" ")}>portfolio / cv</span>
       </div>
