@@ -8,7 +8,6 @@ export default function Header() {
       let gradient = document.querySelector(`.${s.shadow}`);
       let headerTopHeight = document.querySelector(`.${s.topHeader}`).clientHeight;
       gradient.style.transform = `translateY(${headerTopHeight + scrolledPx - 100}px)`;
-      console.log(headerTopHeight + scrolledPx - 100);
     }
 
     function resizeHeader() {
