@@ -2,32 +2,33 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 0px;
+  /* width: 0px; */
+  width: 120px;
   height: 100vh;
   z-index: 1000;
   display: flex;
-  align-items: center;
-  background: green;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
-.centerBlock {
-  width: 70px;
-  min-height: 70px;
-  z-index: 1000;
-}
-
-.contactWrapper {
+.menuIconContainer {
   position: relative;
+  top: -50;
   left: 30px;
   width: 70px;
   height: 70px;
   margin: 10px 0;
+  margin-bottom: 30px;
+  margin-top: 25px;
 }
 
-.iconWrapper {
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(218.97deg, #5cf2aa 10.55%, #5cd7f2 91.95%);
+.menuIcon {
+  width: 44px;
+  height: 44px;
+  /* background: linear-gradient(218.97deg, #5cf2aa 10.55%, #5cd7f2 91.95%); */
+  /* background: linear-gradient(218.97deg, #cd5af5 10.55%, #7a3be0 91.95%); */
+  /* background: linear-gradient(218.97deg, #3bd6e0 10.55%, #5aa1f5 91.95%); */
+  background: linear-gradient(218.97deg, #333b45 10.55%, #2d383a 91.95%);
   color: #fff;
   border-radius: 17px;
   position: absolute;
@@ -38,23 +39,70 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.35s;
+  opacity: 1;
+}
+
+.SideContactsBlock:hover .menuIcon {
+  top: 125px;
+  opacity: 0;
+}
+
+.centerBlock {
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 70px;
+  z-index: 1000;
+  transition: all 0.35s;
+  opacity: 0;
+}
+
+.SideContactsBlock:hover .centerBlock {
+  top: 105px;
+  opacity: 1;
+}
+
+.contactWrapper {
+  position: relative;
+  left: 30px;
+  width: 70px;
+  height: 64px;
+  margin: 10px 0;
+}
+
+.iconWrapper {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(218.97deg, #5cf2aa 10.55%, #5cd7f2 91.95%);
+  color: #fff;
+  border-radius: 17px;
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  text-align: center;
+  line-height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(0.9); */
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
 }
 
 .bg {
-  height: 54px;
-  width: 54px;
+  height: 50px;
+  width: 50px;
   background: #bcbcbc;
   opacity: 0.14;
-  line-height: 70px;
+  line-height: 66px;
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 10px;
+  left: 10px;
   border-radius: 19px;
   text-indent: 85px;
   font-weight: 300;
@@ -63,7 +111,7 @@
   word-spacing: 0.1em;
   text-transform: lowercase;
   color: #262626;
-  padding-right: 30px;
+  padding-right: 35px;
   overflow: hidden;
 }
 
