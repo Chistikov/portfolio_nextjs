@@ -6,6 +6,7 @@
   margin-bottom: 120px;
   word-spacing: 0.1em;
   letter-spacing: 0.1em;
+  z-index: -1000;
 }
 
 .title {
