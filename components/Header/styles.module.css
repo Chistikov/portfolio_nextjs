@@ -91,11 +91,11 @@
   .topHeader {
     flex-direction: column;
     justify-content: center;
-    padding: 25px 0 0px;
+    padding: 0px;
   }
   .nameSurnameBlock {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
 
   .surname {
@@ -109,13 +109,12 @@
 
 @media only screen and (max-width: 620px) {
   .nameSurnameBlock {
-    font-size: 16px;
-    margin-bottom: 25px;
+    font-size: 20px;
+    margin-bottom: 5px;
   }
 
   .professionBlock {
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    word-spacing: -1px;
+    font-size: 16px;
+    letter-spacing: 0.1em;
   }
 }
