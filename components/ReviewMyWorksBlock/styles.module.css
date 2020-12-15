@@ -4,6 +4,7 @@
   padding-left: 60px;
   padding-right: 60px;
   background-color: #060606;
+  z-index: 1000;
 }
 
 .blockTitle {
