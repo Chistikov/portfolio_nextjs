@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #060606;
+  background-color: #0b0d0e;
   color: #fff;
   padding: 0 100px;
   letter-spacing: 0.1em;
@@ -38,6 +38,9 @@
   font-size: 18px;
   font-weight: 300;
   text-align: center;
+  background: #141617;
+  padding: 14px 23px 17px;
+  border-radius: 17px;
 }
 
 .portfolioBlock {
@@ -49,7 +52,7 @@
 
 .bottomHeader {
   height: 620px;
-  background-color: #060606;
+  background-color: #0b0d0e;
   overflow: hidden;
   z-index: 0;
   position: relative;
@@ -68,7 +71,7 @@
   transform: translateY(80px);
   width: 100%;
   height: 200px;
-  background: linear-gradient(180deg, #060606 50%, rgba(6, 6, 6, 0) 100%);
+  background: linear-gradient(180deg, #0b0d0e 50%, rgba(11, 13, 14, 0) 100%);
   z-index: -1;
   transition: marginTop 0.3s;
 }
@@ -85,6 +88,10 @@
   .portfolioBlock {
     width: auto;
   }
+
+  .cv {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1180px) {
@@ -95,7 +102,6 @@
   }
   .nameSurnameBlock {
     text-align: center;
-    margin-bottom: 5px;
   }
 
   .surname {
@@ -105,12 +111,15 @@
   .portfolioBlock {
     display: none;
   }
+
+  .professionBlock {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 620px) {
   .nameSurnameBlock {
     font-size: 20px;
-    margin-bottom: 5px;
   }
 
   .professionBlock {
