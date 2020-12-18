@@ -54,7 +54,7 @@ export default function Header() {
       </div>
 
       <div className={s.bottomHeader}>
-        <img src="/images/avatar_image.png" className={s.image} alt="" />
+        <img src="/images/avatar_image1.jpg" className={s.image} alt="" />
         <div className={s.shadow}></div>
       </div>
     </div>
