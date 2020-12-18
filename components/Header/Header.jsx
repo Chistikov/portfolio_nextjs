@@ -48,7 +48,9 @@ export default function Header() {
         <div className={[s.professionBlock, s.block].join(" ")}>
           web developer&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;ux/ui designer
         </div>
-        <span className={[s.portfolioBlock, s.block].join(" ")}>portfolio / cv</span>
+        <span className={[s.portfolioBlock, s.block].join(" ")}>
+          portfolio<span className={s.cv}> / cv</span>
+        </span>
       </div>
 
       <div className={s.bottomHeader}>

@@ -38,6 +38,9 @@
   font-size: 18px;
   font-weight: 300;
   text-align: center;
+  background: #121516;
+  padding: 14px 23px 17px;
+  border-radius: 17px;
 }
 
 .portfolioBlock {
@@ -85,6 +88,10 @@
   .portfolioBlock {
     width: auto;
   }
+
+  .cv {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1180px) {
@@ -95,7 +102,6 @@
   }
   .nameSurnameBlock {
     text-align: center;
-    margin-bottom: 5px;
   }
 
   .surname {
@@ -105,12 +111,15 @@
   .portfolioBlock {
     display: none;
   }
+
+  .professionBlock {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 620px) {
   .nameSurnameBlock {
     font-size: 20px;
-    margin-bottom: 5px;
   }
 
   .professionBlock {
