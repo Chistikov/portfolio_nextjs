@@ -4,6 +4,7 @@ import Header from "../components/Header/Header";
 import MySkillsBlock from "../components/MySkillsBlock/MySkillsBlock";
 import ReviewMyWorksBlock from "../components/ReviewMyWorksBlock/ReviewMyWorksBlock";
 import SideContactsBlock from "../components/SideContactsBlock/SideContactsBlock";
+import IntroducingBlock from "../components/IntroducingBlock/IntroducingBlock";
 
 export default function Home() {
   return (
@@ -88,6 +89,7 @@ export default function Home() {
             </div>
           </div>
         </section> */}
+        <IntroducingBlock></IntroducingBlock>
         <MySkillsBlock></MySkillsBlock>
         <ReviewMyWorksBlock></ReviewMyWorksBlock>
         <SideContactsBlock></SideContactsBlock>
