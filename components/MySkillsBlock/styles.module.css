@@ -136,4 +136,13 @@
   .skillsContainerSkill {
     font-size: 17px;
   }
+
+  .mySkillsBlock {
+    padding-top: 110px;
+  }
+
+  .buttonsBlock {
+    margin-top: 45px;
+    margin-bottom: 70px;
+  }
 }
