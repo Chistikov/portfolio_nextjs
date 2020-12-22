@@ -27,15 +27,19 @@ export default function Header() {
       }
     }
 
+    function moveImage() {
+      let scrolledPx = document.documentElement.scrollTop || window.pageYOffset;
+      let image = document.querySelector(`.${s.image}`);
+      image.style.bottom = -parseInt(scrolledPx / 3) + "px";
+    }
+
     resizeHeader();
     moveGradient();
 
     document.onscroll = () => {
       resizeHeader();
       moveGradient();
-      let scrolledPx = document.documentElement.scrollTop || window.pageYOffset;
-      let image = document.querySelector(`.${s.image}`);
-      image.style.bottom = -parseInt(scrolledPx / 3) + "px";
+      moveImage();
     };
   });
 
