@@ -1,4 +1,4 @@
-import s from "./styles.module.css";
+import s from "./styles.module.scss";
 import { useEffect, useState } from "react";
 
 import tabSwitcher from "./helpers/tabSwitcher.js";

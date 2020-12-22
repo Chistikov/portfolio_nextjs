@@ -1,4 +1,4 @@
-import s from "./styles.module.css";
+import s from "./styles.module.scss";
 import { useEffect } from "react";
 import gsap from "gsap";
 
