@@ -27,15 +27,27 @@ export default function Header() {
       }
     }
 
+    function moveImage() {
+      let scrolledPx = document.documentElement.scrollTop || window.pageYOffset;
+      let image = document.querySelector(`.${s.image}`);
+      image.style.bottom = -parseInt(scrolledPx / 3) + "px";
+    }
+
+    function moveText() {
+      let scrolledPx = document.documentElement.scrollTop || window.pageYOffset;
+      let textLayer = document.querySelector(`.${s.textLayer}`);
+      let blockHeight = document.querySelector(`.${s.bottomHeader}`).offsetHeight;
+      textLayer.style.top = parseInt(blockHeight / 2 + scrolledPx / 2) + 23 + "px";
+    }
+
     resizeHeader();
     moveGradient();
 
     document.onscroll = () => {
       resizeHeader();
       moveGradient();
-      let scrolledPx = document.documentElement.scrollTop || window.pageYOffset;
-      let image = document.querySelector(`.${s.image}`);
-      image.style.bottom = -parseInt(scrolledPx / 3) + "px";
+      moveImage();
+      moveText();
     };
   });
 
@@ -45,16 +57,26 @@ export default function Header() {
         <div className={[s.nameSurnameBlock, s.block].join(" ")}>
           CHISTIKOV <span className={s.surname}>VLADYSLAV</span>
         </div>
-        <div className={[s.professionBlock, s.block].join(" ")}>
+        {/* <div className={[s.professionBlock, s.block].join(" ")}>
           web developer&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;ux/ui designer
-        </div>
+        </div> */}
         <span className={[s.portfolioBlock, s.block].join(" ")}>
           portfolio<span className={s.cv}> / cv</span>
         </span>
       </div>
 
       <div className={s.bottomHeader}>
-        <img src="/images/avatar_image1.jpg" className={s.image} alt="" />
+        <div className={s.textLayer}>
+          <div className={s.leftBlock}>
+            web
+            <div className={s.lastRow}>developer</div>
+          </div>
+          <div className={s.rightBlock}>
+            <div className={s.firstRow}>ux/ui</div>
+            designer
+          </div>
+        </div>
+        <img src="/images/avatar_img.png" className={s.image} alt="" />
         <div className={s.shadow}></div>
       </div>
     </div>
