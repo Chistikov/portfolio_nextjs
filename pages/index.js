@@ -1,5 +1,5 @@
 import Head from "next/head";
-import s from "../styles/Home.module.css";
+import s from "../styles/Home.module.scss";
 import Header from "../components/Header/Header";
 import MySkillsBlock from "../components/MySkillsBlock/MySkillsBlock";
 import ReviewMyWorksBlock from "../components/ReviewMyWorksBlock/ReviewMyWorksBlock";
